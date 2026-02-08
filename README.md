@@ -52,7 +52,7 @@ CPPO is evaluated on a wide range of multimodal reasoning benchmarks and consist
 
 ## Code Availability
 
-🚧 Code will be released soon.
+We provide training code for synchronous training using verl and asynchronous training using AReaL frameworks.
 
 
 ## Citation

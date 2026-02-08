@@ -1,6 +1,8 @@
 __pycache__/
 
 output/
+outputs/
+tests/
 tensorboard_log/
 data/
 
