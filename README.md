@@ -60,7 +60,7 @@ The synchronous pipeline is built on top of [**verl**](https://github.com/verl-p
 ## Training with CPPO in Asynchronous Settings
 For higher throughput and improved hardware utilization, CPPO is also integrated with [**AReaL**](https://github.com/inclusionAI/AReaL), which decouples generation and training resources.
 
-### Quick Start
+## Quick Start
 To train models such as `Qwen2.5-VL-3B` or `Qwen2.5-VL-7B`:
 
 1. Navigate to the `verl` or `AReaL` directory.
@@ -70,13 +70,13 @@ To train models such as `Qwen2.5-VL-3B` or `Qwen2.5-VL-7B`:
 ```bash
 ### For synchronous training
 cd verl
-bash examples/cppo/run_qwen2_5_vl-3b_cppo.sh
+bash examples/cppo/run_qwen2_5_vl-3b_virl39k.sh
 ```
 
 ```bash
 ### For asynchronous training
 cd AReaL
-bash examples/cppo/run_qwen2_5_vl-3b.sh
+bash examples/cppo/run_qwen2_5_vl-3b_geometry3k.sh
 ```
 
 ## Citation
