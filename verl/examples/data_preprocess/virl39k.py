@@ -39,6 +39,12 @@ if __name__ == "__main__":
 
     train_dataset = datasets.load_dataset("parquet", data_files=local_dataset_path, split="train")
 
+    # remove multi-image examples as cppo implementation currently does not support multi-image
+    train_dataset = train_dataset.filter(
+        lambda example: len(example["image"]) <= 1,
+        num_proc=8
+    )
+
     instruction_following = (
         r"You FIRST think about the reasoning process as an internal monologue and then provide the final answer. "
         r"The reasoning process MUST BE enclosed within <think> </think> tags. "

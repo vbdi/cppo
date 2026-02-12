@@ -14,7 +14,7 @@ actor_rollout_ref:
     cpl_use_vision_mask: False
     cpl_vision_top_percent: 0.5
     cpl_use_advantage_gating: False
-    cpl_eta: 0.1
+    cpl_tau: 0.1
 
 trainer:
   project_name: cppo

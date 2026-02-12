@@ -118,7 +118,7 @@ class ActorConfig(BaseConfig):
         cpl_use_vision_mask (bool): Whether to apply a vision mask during training with vision CPL loss.
         cpl_vision_top_percent (float): The top percentage of vision tokens to apply the CPL loss to when use_vision_csl_loss is True.
         cpl_use_advantage_gating (bool): Whether to apply advantage gating to the policy CPL loss during training with vision CSL loss.
-        cpl_eta (float): CPL eta hyperparameter.
+        cpl_tau (float): CPL tau hyperparameter.
     """
 
     _mutable_fields = BaseConfig._mutable_fields | {
@@ -173,7 +173,7 @@ class ActorConfig(BaseConfig):
     cpl_use_vision_mask: bool = False
     cpl_vision_top_percent: float = 0.5
     cpl_use_advantage_gating: bool = False
-    cpl_eta: float = 0.1
+    cpl_tau: float = 0.1
 
     # Store global batch info for loss aggregation:
     # dp_size: data parallel size

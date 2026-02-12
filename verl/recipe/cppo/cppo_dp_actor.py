@@ -615,7 +615,7 @@ class DataParallelPPOActor(BasePPOActor):
 
                         margin = kl_semantics_preserving - kl_semantics_changing
                         
-                        cpl = F.softplus(margin/self.config.cpl_eta)
+                        cpl = F.softplus(margin/self.config.cpl_tau)
                         cpl_loss = agg_loss(loss_mat=cpl, loss_mask=vision_mask, loss_agg_mode=loss_agg_mode)
                         policy_loss = policy_loss + cpl_loss * self.config.cpl_loss_coef
 

@@ -1,0 +1,28 @@
+from areal.models.tree_attn.constants import BLOCK_SIZE
+from areal.models.tree_attn.module_fsdp import (
+    create_block_mask_from_dense,
+    patch_fsdp_for_tree_training,
+    restore_patch_fsdp_for_tree_training,
+)
+
+# Conditionally import Megatron functionality
+try:
+    from areal.models.tree_attn.module_megatron import (
+        PytorchFlexAttention,
+        patch_bridge_for_tree_training,
+    )
+except ImportError:
+    PytorchFlexAttention = None
+    patch_bridge_for_tree_training = None
+
+__all__ = [
+    # Shared constants
+    "BLOCK_SIZE",
+    # FSDP/common exports
+    "create_block_mask_from_dense",
+    "patch_fsdp_for_tree_training",
+    "restore_patch_fsdp_for_tree_training",
+    # Megatron exports (may be None if Megatron not installed)
+    "PytorchFlexAttention",
+    "patch_bridge_for_tree_training",
+]

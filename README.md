@@ -50,10 +50,34 @@ CPPO is evaluated on a wide range of multimodal reasoning benchmarks and consist
 <img src="./doc/images/results.png" alt="CPPO results" width="600"/>
 </div>
 
-## Code Availability
+# Training
+We provide implementations of CPPO for both **synchronous** and **asynchronous** training regimes.  
+Each variant builds on a widely used large-scale RL framework while adding the CPPO implementation.
 
-We provide training code for synchronous training using verl and asynchronous training using AReaL frameworks.
+## Training with CPPO in Synchronous Settings
+The synchronous pipeline is built on top of [**verl**](https://github.com/verl-project/verl), where rollout generation and training are synchronized.
 
+## Training with CPPO in Asynchronous Settings
+For higher throughput and improved hardware utilization, CPPO is also integrated with [**AReaL**](https://github.com/inclusionAI/AReaL), which decouples generation and training resources.
+
+### Quick Start
+To train models such as `Qwen2.5-VL-3B` or `Qwen2.5-VL-7B`:
+
+1. Navigate to the `verl` or `AReaL` directory.
+2. Follow the provided environment and dataset setup instructions.
+3. Launch training using the CPPO examples.
+
+```bash
+### For synchronous training
+cd verl
+bash examples/cppo/run_qwen2_5_vl-3b_cppo.sh
+```
+
+```bash
+### For asynchronous training
+cd AReaL
+bash examples/cppo/run_qwen2_5_vl-3b.sh
+```
 
 ## Citation
 
