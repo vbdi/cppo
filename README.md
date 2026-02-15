@@ -18,6 +18,15 @@ This repository contains the description and implementation of CPPO, a reinforce
 
 </div>
 
+## 🚀 Highlights
+
+- ✨ **Contrastive Perception Policy Optimization (CPPO)** — A framework for improving vision–language policy reinforcement learning via contrastive perception training.
+- 📈 **Stronger Empirical Performance** — Demonstrates consistent gains on complex multimodal reasoning tasks.
+- 🔍 **Entropy-Based Perception Token Detection** — Automatically locates informative visual tokens through perturbation sensitivity.
+- 📊 **Contrastive Perception Loss (CPL)** — Encourages the policy to gain discriminative perception.
+- 🧠 **No External Supervision** — Perception improvement is gained purely from information-removing and information-preserving augmentations without the use of ground-truth visual information.
+- ⚡ **Research-Ready Implementation** — Includes preprocessing, training, and evaluation pipelines.
+
 ## Methodology
 
 ### 1. Entropy-Based Perception Token Detection
