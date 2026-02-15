@@ -74,7 +74,7 @@ We provide CPPO-trained checkpoints on HuggingFace.
 | Model | Training Dataset | HuggingFace Link |
 |-------|------------------|------------------|
 | CPPO-3B | VIRL-39K | [vbdai/CPPO-3B](https://huggingface.co/vbdai/CPPO-3B) |
-| CPPO-7B | VIRL-39K | [vbdai/CPPO-7B](https://huggingface.co/vbdai/CPPO-3B) |
+| CPPO-7B | VIRL-39K | [vbdai/CPPO-7B](https://huggingface.co/vbdai/CPPO-7B) |
 
 You can load these models using the Hugging Face `transformers` library:
 
