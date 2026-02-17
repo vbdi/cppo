@@ -4,7 +4,7 @@ output/
 outputs/
 tests/
 tensorboard_log/
-data/
+/data/
 
 
 **/*.pt
