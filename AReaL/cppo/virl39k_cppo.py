@@ -61,7 +61,7 @@ def main(args):
     train_dataset = get_virl39k_cppo_rl_dataset(
         path=config.train_dataset.path,
         split="train",
-        img_folder_path=config.train_dataset.path",
+        img_folder_path=config.train_dataset.path,
         processor=processor,
         max_length=config.train_dataset.max_length,
         sem_preserving_transforms=None,
