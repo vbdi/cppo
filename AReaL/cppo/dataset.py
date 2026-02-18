@@ -1,23 +1,19 @@
 """CPPO Geometry3K Dataset with semantic image augmentations."""
 
-from io import BytesIO
-from typing import Any
-
-from datasets import load_dataset
-from PIL import Image
-from PIL.Image import Image as ImageObject
-from torchvision import transforms
-import io
-import random
 import math
+import os
+import random
 from math import ceil
-from typing import Union
+from typing import Any, Union
 
 import numpy as np
+from datasets import load_dataset
+from mathruler.grader import extract_boxed_content
+from PIL.Image import Image as ImageObject
 from PIL import Image, ImageDraw
-import json
 import torch
 import torch.nn.functional as F
+from torchvision import transforms
 from torchvision.transforms.functional import to_tensor, to_pil_image
 
 
