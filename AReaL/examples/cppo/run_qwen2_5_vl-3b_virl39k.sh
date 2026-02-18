@@ -42,7 +42,7 @@ TENSORBOARD_PATH="tensorboard_logs/${EXP_NAME}/${TRIAL_NAME}"
 
 
 python -m areal.launcher.local \
-    cppo/geometry3k_cppo.py --config cppo/geometry3k_cppo.yaml \
+    cppo/virl39k_cppo.py --config cppo/virl39k_cppo.yaml \
     experiment_name=${EXP_NAME} \
     trial_name=${TRIAL_NAME} \
     allocation_mode=${ALLOCATION_MODE} \
