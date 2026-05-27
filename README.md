@@ -1,6 +1,6 @@
 <div align="center">
 
-# **CPPO: Contrastive Perception for Vision Language Policy Optimization**
+# **CPPO: Contrastive Perception Policy Optimization for VLM Agents**
 
 </div>
 
