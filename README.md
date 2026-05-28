@@ -1,6 +1,6 @@
 <div align="center">
 
-# **CPPO: Contrastive Perception Policy Optimization for VLM Agents**
+# **[ICML 2026] CPPO: Contrastive Perception Policy Optimization for VLM Agents**
 
 </div>
 
@@ -10,6 +10,8 @@
 
 
 This repository contains the description and implementation of CPPO, a reinforcement learning framework for finetuning vision–language models (VLMs).
+
+CPPO is accepted to ICML 2026.
 
 <div align="center">
 
@@ -201,11 +203,11 @@ cat ./eval_summary/Qwen2.5-VL-3B-Instruct.csv
 
 If you find this work useful, please consider giving us a star and citing our work.
 ```
-@article{rezaei2026cppo,
-    title={CPPO: Contrastive Perception for Vision Language Policy Optimization},
-    author={Rezaei, Ahmad and Gholami, Mohsen and Ranjbar Alvar, Saeed and Cannons, Kevin and Hossain, Mohammad Asiful and Weimin, Zhou and Zhou, Shunbo and Zhang, Yong and Akbari, Mohammad},
-    journal={arXiv preprint arXiv:XXXX.XXXXX},
-    year={2026}
+@inproceedings{rezaei2026cppo,
+  title={{CPPO}: {C}ontrastive Perception Policy Optimization for {VLM} Agents},
+  author={Rezaei, Ahmad and Gholami, Mohsen and Alvar, Saeed Ranjbar and Cannons, Kevin and Hossain, Mohammad Asiful and Weimin, Zhou and Zhang, Yong and Akbari, Mohammad},
+  booktitle=ICML,  
+  year={2026}
 }
 ```
 
